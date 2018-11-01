@@ -1,4 +1,4 @@
-"""
+
 print("Hello World!")
 
 # Apparely i'm going to slow.,slow, so i will speed up
@@ -52,7 +52,7 @@ print("%s? You belong in a museum" % age)
 real_age = (input ("how old are you again?"))
 hidden_age = real_age + 5
 print(hidden_age)
-"""
+
 
 # Multi-line Comments
 
@@ -139,3 +139,15 @@ print(your_grade)
 # Random numbers
 import random
 print(random.randint(0, 100))
+
+# Equality Statements
+print(5 > 3)
+print(5 >= 3)
+print(3 == 3)
+print(3 != 4)
+"""
+a = 3 # A is set to 3
+a==3 # is a equal to 3?
+"""
+
+
