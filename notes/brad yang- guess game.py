@@ -1,5 +1,10 @@
 import random
-(random.radiant(1,10)
 
+guess = input("Guess any number from 0 to 10 ")
 
-guess_1 = input("guess #1?")
+random_number = random.randint(0, 10)
+
+if int(guess) == int(random_number):
+    print("you win")
+else:
+    print("you lose bwahahahahhahah try again")
