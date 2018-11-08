@@ -1,30 +1,15 @@
 import random
-
-guess = input("Guess any number from 0 to 10 first try ")
+guesses = 5
 
 random_number = random.randint(0, 10)
 
-if int(guess) == int(random_number):
-        print("you win")
-    else:
-guess1 = input("second try again")
+playing = True
 
-if int(guess1) == int(random_number):
-        print("you win")
+while guesses > 0 and playing:
+    guess = input("Guess a number from 0-10. You have five guesses")
+    if int(guess) == int(random_number):
+        print("You Win!")
+        playing = False
     else:
-guess2 = input("third try again")
-
-if int(guess2) == int(random_number):
-        print("you win")
-    else:
-guess3 = input("forth try again")
-
-if int(guess3) == int(random_number):
-        print("you win")
-    else:
-guess4 = input("fifth last try")
-
-if int(guess4) == int(random_number):
-        print("you win")
-    else:
-        print("you lose try again")
+        print("Try again")
+        guesses -= 1
