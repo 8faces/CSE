@@ -10,14 +10,14 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/notes$Brad_Yang___Mad_Lib.coverage" NAME="Brad Yang - Mad Lib Coverage Results" MODIFIED="1541628465238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$brad_yang__guess_game.coverage" NAME="brad yang- guess game Coverage Results" MODIFIED="1541803471958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$brad_yang__guess_game.coverage" NAME="brad yang- guess game Coverage Results" MODIFIED="1542148466069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Basic_Python_Notes.coverage" NAME="Basic Python Notes Coverage Results" MODIFIED="1541107692146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1346075717">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.38" value="1" />
@@ -26,11 +26,12 @@
           <entry key="project.open.time.44" value="2" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.79" value="1" />
           <entry key="project.open.time.84" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,13 +49,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="4965" />
+          <entry key="py" value="4993" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="4965" />
+          <entry key="Python" value="4993" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -74,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
+            <state relative-caret-position="1293">
               <caret line="151" selection-start-line="151" selection-end-line="151" />
               <folding>
                 <marker date="1541107654862" expanded="true" signature="1408:1409" ph="..." />
@@ -93,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brad yang- guess game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="119">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -103,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/Brad yang - Lucky 7's.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -285,14 +286,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.30484116" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.30937973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" visible="true" weight="0.30484116" />
+      <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.30484116" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31311476" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,9 +322,16 @@
     <entry file="file://$PROJECT_DIR$/notes.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Brad Yang - Mad Lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Basic Python Notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
+        <state relative-caret-position="1293">
           <caret line="151" selection-start-line="151" selection-end-line="151" />
           <folding>
             <marker date="1541107654862" expanded="true" signature="1408:1409" ph="..." />
@@ -339,24 +346,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Brad Yang - Mad Lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Brad yang - Lucky 7's.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/brad yang- guess game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
