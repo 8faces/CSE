@@ -34,7 +34,7 @@ print(" The last thing in the list is %s" % Hero1[len(Hero1)-1])
 
 
 
-"""
+
 
 Hero = ['genji', 'soldier_76', 'winston', 'Reaper', 'tracer',
         'wreaking ball', 'chicken', 'Dva', 'hanzo', 'mercy', 'junk_rat', 'widowmaker', 'maccree']
@@ -60,13 +60,13 @@ Hero.remove("genji")
 print(Hero)
 
 # Removing from a list (pt 2)
-# sometimes, you don't knowow what is in the list, but you know
-# you want to get rid of somthing at a specific index
+# sometimes, you don't know what is in the list, but you know
+# you want to get rid of something at a specific index
 Hero.pop(0)
 print(Hero)
 # notice that soldier_76 is no longer in the list because was is at index 0
-"""
-"""
+
+
 number_list = ['1', '2', '3', '4', '5', '6', '7', '8', ]
 
 print(number_list[1:])
@@ -77,7 +77,7 @@ number_list.insert(4, "4")
 
 number_list.remove("3")
 print(number_list)
-"""
+
 
 # avoid putting parentheses when making a list
 
@@ -88,4 +88,4 @@ list1 = list(string1)
 print(list)
 
 # change back into a string (list→string)
-print("!".join(list))   
+print("!".join(list))
