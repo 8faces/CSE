@@ -11,15 +11,15 @@ print("First Do not jump on %s %s" % (adjective1, noun1))
 adjective2 = input("type in an adjective")
 noun2 = input("type a noun")
 
-print("Next, eating %s pineapple %s is bad" % (adjective2, noun2))
-
-adjective3 = input("type in an adjective")
 noun3 = input("type a noun")
 
 print("Third, %s %s is bad so don't touch it" % (adjective3, noun3))
 
 adjective4 = input("type in an adjective")
 noun4 = input("type a noun")
+print("Next, eating %s pineapple %s is bad" % (adjective2, noun2))
+
+adjective3 = input("type in an adjective")
 
 print("Fourth rule is %s %s so touch that because its good" % (adjective4, noun4))
 

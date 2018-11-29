@@ -31,7 +31,7 @@ print(" The last thing in the list is %s" % Hero1[len(Hero1)-1])
 
 
 
-
+"""
 
 
 
@@ -78,6 +78,7 @@ number_list.insert(4, "4")
 number_list.remove("3")
 print(number_list)
 
+"""
 
 # avoid putting parentheses when making a list
 
@@ -87,5 +88,9 @@ string1 = "turquoise"
 list1 = list(string1)
 print(list)
 
-# change back into a string (list→string)
-print("!".join(list))
+for i in range(len(list1)):
+        if list1[i] == "u":     # i goes through all indices
+            list1.pop(i) # if you find a "u"
+            list1.insert(i, " censor ")       # remove the i_th index
+# put a censor in there instead
+print("".join(list1))
