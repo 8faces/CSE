@@ -1,5 +1,5 @@
 
-"""
+
 # Creating a list
 fruit = ['apples', 'oranges', 'grapes',
          'mango', 'pineapple', 'strawberries', 'banana', 'pees', 'tomato', ]    # USE SQUARE BRACKETS!!!!!!!!!
@@ -19,19 +19,19 @@ print(fruit)
 # looping through lists
 for item in fruit:
     print(item)
-"""
-"""
+
+
 
 Hero1 = ['genji', 'soldier_76', 'winston', 'Reaper', 'tracer', 
         'wreaking_ball', 'Dva', 'hanzo', 'mercy', 'junk_rat']
 
 print(" The last thing in the list is %s" % Hero1[len(Hero1)-1])
-"""
 
 
 
 
-"""
+
+
 
 
 
@@ -78,7 +78,7 @@ number_list.insert(4, "4")
 number_list.remove("3")
 print(number_list)
 
-"""
+
 
 # avoid putting parentheses when making a list
 

@@ -153,3 +153,15 @@ a==3 # is a equal to 3?
 
 1000 % 5
 
+# function notes
+# a**2 + b**2 = c**2
+
+
+def pythagorean(a, b):
+    return (a**2 + b**2) ** (1/2)
+
+
+print(pythagorean(3, 4))
+
+
+
