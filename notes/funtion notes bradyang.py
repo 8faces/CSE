@@ -1,7 +1,7 @@
 def challenge1(firstname, lastname):
-    return (firstname + lastname)
-
-print(challenge1(3, 4)) ** ()
+    print(lastname, firstname)
 
 
-# challenge 2
+challenge1("bob", "billy")
+
+odd = (1, 3, 6, 9, )
