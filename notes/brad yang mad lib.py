@@ -1,8 +1,8 @@
-mad_lib_list = {'lulu', 'genji', 'soldier_76', 'winston', 'Reaper', 'tracer',
-        'wreaking_ball', 'Dva', 'hanzo', 'mercy', 'junk_rat'}
+mad_lib_list = {'adjective0', 'adjective1', 'adjective2', 'adjective3'}
 
 
-mad_lib_list.append(input('type a Overwatch character')
+mad_lib_list.append(input('type a ')
+
 
 
 

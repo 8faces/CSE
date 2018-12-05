@@ -10,9 +10,9 @@ print("So, you're %s old, %s tall and %s heavy." % (age, height, weight))
 
 print('Let\'s practice everything.')
 print('You\'d need to know \'bout escapes')
-with '\\ that do \n newlines and \t tabs.':
+print ('\\ that do \n newlines and \t tabs.')
 
-    poem = """
+poem = """
 \tThe lovely world
 with logic so firmly planted
 cannot discern \n the needs of love
