@@ -8,7 +8,7 @@ while active and money > 0:
         dice_1 = random.randint(1, 6)
         print(dice_1 + dice_2)
         if dice_1 + dice_2 == 7:
-            money = money + 4
+            money = money + 9
             print("you have won $5. now you have %d " % money)
         else:
             money = money - 1
