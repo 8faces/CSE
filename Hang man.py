@@ -1,4 +1,11 @@
 import random
 word_bank = ['dog', 'catfish', 'Jose', 'frog', 'gummy',
-             'cat!', 'pants', 'dragon', 'lizard', 'chaiinpor']
-random.choice(0, 9)
+             'cat!', 'pants', 'dragon', 'lizard', 'banana']
+word = random.choice(word_bank)
+
+
+
+
+
+
+
