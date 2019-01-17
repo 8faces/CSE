@@ -5,3 +5,4 @@ word = random.choice(word_bank)
 word_bank = list(word)
 
 print("you have 8 guesses")
+guess = 8
