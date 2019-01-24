@@ -78,8 +78,6 @@ number_list.insert(4, "4")
 number_list.remove("3")
 print(number_list)
 
-
-
 # avoid putting parentheses when making a list
 
 
@@ -94,3 +92,4 @@ for i in range(len(list1)):
             list1.insert(i, " censor ")       # remove the i_th index
 # put a censor in there instead
 print("".join(list1))
+
