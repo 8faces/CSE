@@ -1,28 +1,36 @@
 world_map = {
-    'R19A': {
-        'NAME': "Mr. Wiebe's room",
+    'Forest': {
+        'NAME': "Galaxy Forest",
         'DESCRIPTION': "This is the room that you are in",
         'PATHS': {
-            'NORTH': "PARKING_LOT",
+            'NORTH': "Pink_lake",
         }
     },
-    'PARKING_LOT': {
-        'NAME': "A Parking Lot",
-        'DESCRIPTION': "There are a few cars parked here",
+    'Pink_lake': {
+        'NAME': "Pink lake",
+        'DESCRIPTION': "There are fish in the lake",
         'PATHS': {
-            'SOUTH': 'R19A'
+            'SOUTH': 'Forest',
+            'WEST': 'Dwarves_town',
         }
+    },
+    'Dwarves_town': {
+        'NAME': "Dwarves town",
+        'DESCRIPTION': "there are many Dwarves around"
+        'PATHS':{}
+            'EAST':'Pink lake',
     }
 }
 
 
-directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN22220000212122200000000000000000000000"]
-current_node = world_map["R19A"]
+directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
+current_node = world_map["Forest"]
 playing = True
 
 
 while playing:
     print(current_node['NAME'])
+    print(current_noDe['DESCRIPTION'])
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -34,4 +42,5 @@ while playing:
             print("you can't go that way")
     else:
         print("Command no recognized")
+
 

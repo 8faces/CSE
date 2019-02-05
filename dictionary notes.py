@@ -87,3 +87,9 @@ for state, info in complex_dictionary.items():
         print("-" * 20)
     print('censor ' * 20)
 
+# Other Notes
+states["MN"] = "mississippi?"  # This isn't minnesota
+
+states["MN"] = "Minnesota"  # Fixed it
+
+

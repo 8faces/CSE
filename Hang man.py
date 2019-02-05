@@ -22,6 +22,4 @@ while guess > 0:
 
     tries = input("Come and guess papa Joe's letters")
     letter_list.append(tries)
-
     guess -= 1
-
