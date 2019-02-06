@@ -1,36 +1,54 @@
+print("welcome to the World of Noside")
 world_map = {
-    'Forest': {
+    'FOREST': {
         'NAME': "Galaxy Forest",
-        'DESCRIPTION': "This is the room that you are in",
+        'DESCRIPTION': "you are in Galaxy Forest",
         'PATHS': {
-            'NORTH': "Pink_lake",
+            'NORTH': "PINK_LAKE_PATH",
         }
     },
-    'Pink_lake': {
+    'PINK_LAKE_PATH': {
         'NAME': "Pink lake",
         'DESCRIPTION': "There are fish in the lake",
         'PATHS': {
-            'SOUTH': 'Forest',
-            'WEST': 'Dwarves_town',
+            'SOUTH': 'FOREST',
+            'WEST': 'DWARVES_TOWN',
+            'NORTH': 'PINK_LAKE_SHORE'
         }
     },
-    'Dwarves_town': {
+    'DWARVES_TOWN': {
         'NAME': "Dwarves town",
-        'DESCRIPTION': "there are many Dwarves around"
-        'PATHS':{}
-            'EAST':'Pink lake',
+        'DESCRIPTION': "there are many Dwarves around",
+        'PATHS': {
+            'EAST': 'Pink lake path',}
+    },
+    'THE_LAKE_SHORE': {
+        'NAME': "Shore of pink lake ",
+        'DESCRIPTION': "You feel a slight breeze and the water is touching your feet",
+        'PATHS': {
+            'SOUTH': 'PINK_LAKE_PATH',
+            'NORTH': 'INSIDE_LAKE_'
+            },
+    'INSIDE_LAKE': {
+        'NAME': "Inside lake",
+        'DESCRIPTION': "You are swimming in the lake ",
+        'PATHS': {
+            'DOWN': 'UNDER_WATER'
+        }
+
+    }
     }
 }
 
 
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
-current_node = world_map["Forest"]
+current_node = world_map["FOREST"]
 playing = True
 
 
 while playing:
-    print(current_node['NAME'])
-    print(current_noDe['DESCRIPTION'])
+    print(current_node['DESCRIPTION'])
+    # print(current_node['PATHS'])
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
