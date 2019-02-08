@@ -1,10 +1,11 @@
 print("welcome to the World of Noside")
 world_map = {
     'FOREST': {
-        'NAME': "Galaxy Forest",
-        'DESCRIPTION': "you are in Galaxy Forest",
+        'NAME': "South Galaxy Forest",
+        'DESCRIPTION': "you are in Galaxy Forest it is so colorful",
         'PATHS': {
-            'NORTH': "PINK_LAKE_PATH"
+            'NORTH': "PINK_LAKE_PATH",
+            'SOUTH': 'TOWN_OF_ENDVADOR'
         }
     },
     'PINK_LAKE_PATH': {
@@ -21,6 +22,7 @@ world_map = {
         'DESCRIPTION': "there are many Dwarves around",
         'PATHS': {
             'EAST': 'PINK_LAKE_PATH',
+            'WEST': 'DWARVEN_CASTLE'
         }
     },
     'THE_LAKE_SHORE': {
@@ -35,19 +37,40 @@ world_map = {
         'NAME': "Inside lake",
         'DESCRIPTION': "You are swimming in the lake ",
         'PATHS': {
-            'DOWN': 'UNDER_WATER',
+            'DOWN': 'UNDERWATER',
             'SOUTH': 'THE_LAKE_SHORE'
-        },
-    'UNDER_WATER': {
+        }
+    },
+    'UNDERWATER': {
         'NAME': "Under water",
-        'DESCRIPTION': 'you are under water and you se fish and a shinny thing',
+        'DESCRIPTION': 'you are under water and you see fish and a UNDER WATER TEMPLE ',
         'PATHS': {
             'UP': 'INSIDE_LAKE',
-            'DOWN': 'SHINNY_THING'
+            'DOWN': 'UNDERWATER_TEMPLE'
         }
+    },
+    'UNDERWATER_TEMPLE': {
+        'NAME': "Under water temple",
+        'DESCRIPTION': 'You found a room with air in it still',
+        'PATHS': {
+            'UP': 'UNDERWATER'
+        }
+    },
+    'DWARVEN_CASTLE': {
+        'NAME': "King Otar's Castle",
+        'DESCRIPTION': 'This is KIng Otars castle the King of dwarves',
+        'PATHS': {
+            'EAST': 'DWARVES_TOWN',
+        }
+    },
+    'TOWN_OF_ENDVADOR':{
+        'NAME': "Endvador",
+        'DESCRIPTION': 'You are in the town ruled by the kingdom of Beelzebub ',
+        'PATHS': {
+            'NORTH': 'FOREST'
+        }
+    }
 
-    }
-    }
 }
 
 
