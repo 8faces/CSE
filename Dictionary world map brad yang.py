@@ -63,13 +63,14 @@ world_map = {
             'EAST': 'DWARVES_TOWN',
         }
     },
-    'TOWN_OF_ENDVADOR':{
+    'TOWN_OF_ENDVADOR': {
         'NAME': "Endvador",
         'DESCRIPTION': 'You are in the town ruled by the kingdom of Beelzebub ',
         'PATHS': {
             'NORTH': 'FOREST'
         }
-    }
+    },
+    '': ()
 
 }
 
