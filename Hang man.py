@@ -22,6 +22,14 @@ while guess > 0:
     if "_" not in bush:
         print("DUN DUN DUN")
         playing = False
+
+
+if playing and not hastheplayerwon:
+    print("you just killed a man")
+
+else:
+    print("you win")
+
         hastheplayerwon = True
         continue
 
@@ -30,10 +38,3 @@ while guess > 0:
     tries = input("Come and guess papa Joe's letters")
     letter_list.append(tries)
     guess -= 1
-
-
-if playing and not hastheplayerwon:
-    print("you just killed a man")
-
-else:
-    print("you win")
