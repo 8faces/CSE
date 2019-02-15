@@ -1,4 +1,4 @@
-import Special_Random
+
 
 
 class Laptop(object):
@@ -57,7 +57,6 @@ my_computer.charge(20)
 
 your_computer.charge(20)
 
-print(Special_Random.RandomWiebe.special_random())
 
 
 
