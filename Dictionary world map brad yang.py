@@ -67,10 +67,40 @@ world_map = {
         'NAME': "Endvador",
         'DESCRIPTION': 'You are in the town ruled by the kingdom of Beelzebub ',
         'PATHS': {
-            'NORTH': 'FOREST'
+            'NORTH': 'FOREST',
+            'EAST': 'ENDVADOR_MARKET',
+            'WEST': ''
         }
     },
-    '': ()
+    'ENDVADOR_MARKET': {
+        'NAME': "Endvador Market",
+        'DESCRIPTION': 'This is the market of envador you can buy many items',
+        'PATHS':{
+            'WEST': 'TOWN_OF_ENDVADOR'
+        }
+    },
+    'GLACIAL_CAVE': {
+        'NAME': "Glacial Cave",
+        'DESCRIPTION': 'This is the glacial cave itis a source for people of Endvador no one dares go north or west',
+        'PATH': {
+            'EAST': 'TOWN_OF_ENDVADOR',
+            'WEST': 'DARK_REALM'
+        }
+    },
+    'DARK_REALM': {
+        'NAME': "The Dark Realm",
+        'DESCRIPTION': 'Your in the dark realm you are where no man dare to seek',
+        'PATH': {
+            'EAST': 'GLACIAL_CAVE',
+            'NORTH': 'FALLEN_KING_RUNES'
+        }
+    },
+    'FALLEN_KING_RUNES': {
+        'NAME' "Fallen king runes",
+        'DESCRIPTION' 'You are at the runes of the fallen king you may find some of his treasures'
+        
+        }
+    }
 
 }
 
