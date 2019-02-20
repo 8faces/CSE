@@ -96,13 +96,15 @@ world_map = {
         }
     },
     'FALLEN_KING_RUNES': {
-        'NAME' "Fallen king runes",
-        'DESCRIPTION' 'You are at the runes of the fallen king you may find some of his treasures'
-        
+        'NAME': "Fallen king runes",
+        'DESCRIPTION': 'You are at the runes of the fallen king you may find some of his treasures',
+        'PATH': {
+            'SOUTH': 'DARK_REALM'
         }
     }
-
 }
+
+
 
 
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
