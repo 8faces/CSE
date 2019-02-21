@@ -8,13 +8,18 @@ class Room(object):
 
 
 # These are the instances of the rooms (instantiation
-
+# R19A = Room("MR. Wiebe's Room", )
+# parking_lot = Room("The Parking Lot", None, R19A)
 # OPTION 1 - use variable, but fix later
-R19A = Room("MR. Wiebe's Room", )
-parking_lot = Room("The Parking Lot", None, R19A)
+Forest = Room("South Galaxy Forest", )
+pink_lake = Room("The Pink Lake", None, Forest)
+Dwarves_town = ("Dwarves Town", None, pink_lake)
 
-R19A.north = parking_lot
+
+Forest.south = pink_lake
+pink_lake.west = Dwarves_town
 
 # OPTION 2 -use strings, but more difficult controller
 R19A = Room("MR. Wiebe's Room", )
 parking_lot = Room("The Parking Lot", None, "R19A")
+
