@@ -11,9 +11,11 @@ class Room(object):
 # R19A = Room("MR. Wiebe's Room", )
 # parking_lot = Room("The Parking Lot", None, R19A)
 # OPTION 1 - use variable, but fix later
-Forest = Room("South Galaxy Forest", )
+Forest = Room("South Galaxy Forest", None, Town_of_Envador,)
 pink_lake = Room("The Pink Lake", None, Forest)
-Dwarves_town = ("Dwarves Town", None, pink_lake)
+Dwarves_town = Room("Dwarves Town", None, pink_lake)
+Town_of_Envador = Room("Town of Endvador", None, )
+
 
 
 Forest.south = pink_lake
