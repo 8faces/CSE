@@ -69,13 +69,13 @@ world_map = {
         'PATHS': {
             'NORTH': 'FOREST',
             'EAST': 'ENDVADOR_MARKET',
-            'WEST': ''
+            'WEST': 'GLACIAL_CAVE'
         }
     },
     'ENDVADOR_MARKET': {
         'NAME': "Endvador Market",
         'DESCRIPTION': 'This is the market of envador you can buy many items',
-        'PATHS':{
+        'PATHS': {
             'WEST': 'TOWN_OF_ENDVADOR'
         }
     },
@@ -84,7 +84,8 @@ world_map = {
         'DESCRIPTION': 'This is the glacial cave itis a source for people of Endvador no one dares go north or west',
         'PATH': {
             'EAST': 'TOWN_OF_ENDVADOR',
-            'WEST': 'DARK_REALM'
+            'WEST': 'DARK_REALM',
+            'NORTH': 'FROST FOREST'
         }
     },
     'DARK_REALM': {
@@ -101,10 +102,30 @@ world_map = {
         'PATH': {
             'SOUTH': 'DARK_REALM'
         }
-    }
+    },
+    'FROST_FOREST': {
+        'NAME': "FROST Forest",
+        'DESCRIPTION': "You see snow everywhere and it's very cold.",
+        'PATHS': {
+            'DOWN': "GAME_ROOM",
+            'NORTH': "TIME_ROOM"
+        }
+    },
+    'GAME_ROOM': {
+        'NAME': "The Game Dimension",
+        'DESCRIPTION': "There are lots of games here",
+        'PATHS':
+        'NOWHERE'
+    },
+    'TIME_ROOM': {
+        'NAME': "Time Dimension",
+        'DESCRIPTION': 'You are in the time dimension',
+        'PATHS': {
+
+        }
+    },
+
 }
-
-
 
 
 directions = ["NORTH", "SOUTH", "EAST", "WEST", "UP", "DOWN"]
@@ -126,5 +147,3 @@ while playing:
             print("you can't go that way")
     else:
         print("Command no recognized")
-
-
