@@ -81,11 +81,11 @@ world_map = {
     },
     'GLACIAL_CAVE': {
         'NAME': "Glacial Cave",
-        'DESCRIPTION': 'This is the glacial cave itis a source for people of Endvador no one dares go north or west',
+        'DESCRIPTION': "You look around and see nothing but ice it is cold",
         'PATH': {
             'EAST': 'TOWN_OF_ENDVADOR',
             'WEST': 'DARK_REALM',
-            'NORTH': 'FROST FOREST'
+            'NORTH': 'FROST_FOREST',
         }
     },
     'DARK_REALM': {
@@ -93,35 +93,36 @@ world_map = {
         'DESCRIPTION': 'Your in the dark realm you are where no man dare to seek',
         'PATH': {
             'EAST': 'GLACIAL_CAVE',
-            'NORTH': 'FALLEN_KING_RUNES'
+            'NORTH': 'FALLEN_KING_RUNES',
         }
     },
     'FALLEN_KING_RUNES': {
         'NAME': "Fallen king runes",
         'DESCRIPTION': 'You are at the runes of the fallen king you may find some of his treasures',
         'PATH': {
-            'SOUTH': 'DARK_REALM'
+            'SOUTH': 'DARK_REALM',
         }
     },
     'FROST_FOREST': {
-        'NAME': "FROST Forest",
+        'NAME': "Frost Forest",
         'DESCRIPTION': "You see snow everywhere and it's very cold.",
         'PATHS': {
-            'DOWN': "GAME_ROOM",
-            'NORTH': "TIME_ROOM"
+            'DOWN': 'GAME_ROOM',
+            'NORTH': 'TIME_ROOM',
         }
     },
     'GAME_ROOM': {
         'NAME': "The Game Dimension",
         'DESCRIPTION': "There are lots of games here",
-        'PATHS':
-        'NOWHERE'
+        'PATHS': {
+            'UP': 'FROST_FOREST',
+        }
     },
     'TIME_ROOM': {
         'NAME': "Time Dimension",
         'DESCRIPTION': 'You are in the time dimension',
         'PATHS': {
-
+            'SOUTH': 'FROST_FOREST',
         }
     },
 

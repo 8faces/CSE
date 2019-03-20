@@ -23,30 +23,18 @@ while guess > 0 and playing:
     if "_" not in bush:
         print("DUN DUN DUN")
         playing = False
-<<<<<<< HEAD:Hang man.py
-=======
         hastheplayerwon = True
         continue
 
     print(bush)
 
-    tries = input("guess letter")
+    tries = input("guess")
     letter_list.append(tries)
 
     guess -= 1
->>>>>>> cb83a6636b7e006f7562ea35ee3164b735ad3555:Brad Yang Hang man.py
 
 
 if playing and not hastheplayerwon:
     print("you just killed a man")
 else:
     print("you win")
-
-        hastheplayerwon = True
-        continue
-
-    print(bush)
-
-    tries = input("Come and guess papa Joe's letters")
-    letter_list.append(tries)
-    guess -= 1

@@ -1,6 +1,4 @@
 
-
-
 class Laptop(object):
     def __init__(self, screen_resolution, extra_space=1000, colour="Cobalt"):
         # Thing that laptops has
