@@ -1,6 +1,7 @@
- y3r 2gclass Item(object):
+class Item(object):
     def __init__(self, name):
         self.name = name
+        self.equipped = False
 
 
 class Weapon(Item):
@@ -11,7 +12,7 @@ class Weapon(Item):
         self.durability = durability
 
     def attack(self):
-
+        self.equipped = True
         self.sharpness -= 100
         print("Nicu hit")
 
@@ -217,7 +218,7 @@ Iron_spear = Spear("Iron spear", sharpness=40, damage=70, durability=300)
 Longinus_Smasher = Spear("Longinus Smasher ", sharpness=2000000, damage=5000, durability=1500000)
 Iron_helmet = Helmet("Iron Helmet", armor_amt=150, durability=200)
 Wood_helmet = Helmet("Wood Helmet", armor_amt=80, durability=100)
-wifu1 = BodyPillow("Zero Two", armor_amt=100000, durability=1000000)
+wifu1 = BodyPillow("Zero Two Body Pillow", armor_amt=100000, durability=1000000)
 wifu2 = BodyPillow("Takagasi", armor_amt=100000, durability=1000000)
 wifu3 = BodyPillow("Asuna", armor_amt=100000, durability=1000000)
 Gcoin = Coin("Gold Coin")
@@ -230,22 +231,21 @@ forest = Room("South Galaxy Forest", "you are in Galaxy Forest it is so colorful
 town_of_endvador = Room("The Town Endvador", 'You are in the town ruled by the kingdom of Beelzebub ', None, forest)
 endvador_market = Room("Endvador Market", 'This is the market of envador you can buy many items', None,
                        town_of_endvador)
-pink_lake = Room("The Pink Lake Path", "There are fish in the lake", None, forest,)
+pink_lake = Room("The Pink Lake", "There are fish in the lake", None, forest,)
 pink_lake_shore = Room("Shore of pink lake ",  "You feel a slight breeze and the water is touching your feet", None,
-                       pink_lake, [Bcoin, Scoin])
+                       pink_lake)
 inside_lake = Room("Inside lake", "You are swimming in the lake ", pink_lake,)
 underwater = Room("Under water", 'you are under water and you see fish and a UNDER WATER TEMPLE ', None, inside_lake,)
 underwater_Temple = Room("Under water temple", 'you are in the final boss room!!!you willl die!!!', None, )
 dwarves_town = Room("Dwarves Town", "there are many Dwarves around", None, pink_lake)
 dwarven_castle = Room("King Otar's Castle", "This is KIng Otars castle the King of dwarves", None, dwarves_town, )
-ice_cave = Room("Glacial Cave", "You look around and see nothing but ice it is cold", None, town_of_endvador, [Gcoin, ])
+ice_cave = Room("Glacial Cave", "You look around and see nothing but ice it is cold", None, town_of_endvador)
 frost_forest = Room("Frost Forest", "You see snow everywhere and it's very cold.", None, ice_cave)
-dark_realm = Room("The Dark Realm", 'Your in the dark realm you are where no man dare to seek', None, ice_cave,
-                  Dragon_Shield, )
-fall_kingdom = Room("Fallen kingdom runes", 'You are at the runes of the fallen king you may find some of his '
-                                            'treasures', None, dark_realm)
-game_room = Room("The Game Dimension", "There are lots of games here", None, frost_forest, wifu2, )
-time_room = Room("Time Dimension", 'You are in the time dimension', None, frost_forest, [Longinus_Smasher, wifu3])
+dark_realm = Room("The Dark Realm", 'Your in the dark realm you are where no man dare to seek', None, ice_cave)
+fall_kingdom = Room("Fallen kingdom runes", 'You are at the runes of the fallen king you may find some of his treasures'
+                    , None, dark_realm)
+game_room = Room("The Game Dimension", "There are lots of games here", None, frost_forest)
+time_room = Room("Time Dimension", 'You are in the time dimension', None, frost_forest)
 
 forest.south = town_of_endvador
 forest.north = pink_lake
@@ -316,7 +316,7 @@ while playing:
     print("You have the options to grab these items")
 
     for item in player.current_location.items:
-        print(Item.name)
+        print(item.name)
 
     command = input(">_")
 
@@ -335,15 +335,15 @@ while playing:
             print("you can't go that way")
 
     elif "take" in command:
-        Item = command[5:]
+        item = command[5:]
         ItemInRoom = None
         Name = Item
-        for Item in player.current_location.items:
-            if Item.name == Item:
-                ItemInRoom = Item
+        for item in player.current_location.items:
+            if item.name == item:
+                ItemInRoom = item
             if ItemInRoom is not None:
                 player.inventory.append(ItemInRoom)
-                player.current_location.Items.remove(ItemInRoom)
+                player.current_location.items.remove(ItemInRoom)
 
     else:
         print("Command no recognized")

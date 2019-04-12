@@ -9,7 +9,7 @@ world_map = {
         }
     },
     'PINK_LAKE_PATH': {
-        'NAME': "Pink lake",
+        'NAME': "Pink lake Path",
         'DESCRIPTION': "There are fish in the lake",
         'PATHS': {
             'SOUTH': 'FOREST',
@@ -30,6 +30,7 @@ world_map = {
         'DESCRIPTION': "You feel a slight breeze and the water is touching your feet",
         'PATHS': {
             'SOUTH': 'PINK_LAKE_PATH',
+
             'NORTH': 'INSIDE_LAKE'
             }
     },
