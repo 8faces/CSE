@@ -349,7 +349,9 @@ while playing:
         print(player.inventory)
         for found_item in player.inventory:
             if found_item is None:
-                print("")
+                print("You no have items")
+            else:
+                print("found_item.name")
 
     elif "take" in command:
         Item = command[5:]
