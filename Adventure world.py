@@ -1,4 +1,4 @@
- y3r 2gclass Item(object):
+class Item(object):
     def __init__(self, name):
         self.name = name
 
@@ -225,27 +225,37 @@ Scoin = Coin("Silver Coin")
 Bcoin = Coin("Bronze Coin")
 
 
-forest = Room("South Galaxy Forest", "you are in Galaxy Forest it is so colorful", None,
-              [Noodles, Wood_helmet, Wood_Sword, Wood_Shield, ])
-town_of_endvador = Room("The Town Endvador", 'You are in the town ruled by the kingdom of Beelzebub ', None, forest)
-endvador_market = Room("Endvador Market", 'This is the market of envador you can buy many items', None,
-                       town_of_endvador)
-pink_lake = Room("The Pink Lake Path", "There are fish in the lake", None, forest,)
+forest = Room("South Galaxy Forest", "you are in Galaxy Forest it is so colorful", None, None, None, None, None, None,
+              None, [Noodles, Wood_helmet, Wood_Sword, Wood_Shield])
+town_of_endvador = Room("The Town Endvador", 'You are in the town ruled by the kingdom of Beelzebub ', forest, None,
+                        None, None, None, None, None, )
+endvador_market = Room("Endvador Market", 'This is the market of envador you can buy many items', None, None, None,
+                       town_of_endvador, None, None, None, [Iron_helmet, Iron_Sword, ])
+pink_lake = Room("The Pink Lake Path", "There are fish in the lake", None, forest, None, None, None, None, None, )
 pink_lake_shore = Room("Shore of pink lake ",  "You feel a slight breeze and the water is touching your feet", None,
                        pink_lake, [Bcoin, Scoin])
-inside_lake = Room("Inside lake", "You are swimming in the lake ", pink_lake,)
-underwater = Room("Under water", 'you are under water and you see fish and a UNDER WATER TEMPLE ', None, inside_lake,)
-underwater_Temple = Room("Under water temple", 'you are in the final boss room!!!you willl die!!!', None, )
-dwarves_town = Room("Dwarves Town", "there are many Dwarves around", None, pink_lake)
-dwarven_castle = Room("King Otar's Castle", "This is KIng Otars castle the King of dwarves", None, dwarves_town, )
-ice_cave = Room("Glacial Cave", "You look around and see nothing but ice it is cold", None, town_of_endvador, [Gcoin, ])
-frost_forest = Room("Frost Forest", "You see snow everywhere and it's very cold.", None, ice_cave)
-dark_realm = Room("The Dark Realm", 'Your in the dark realm you are where no man dare to seek', None, ice_cave,
-                  Dragon_Shield, )
-fall_kingdom = Room("Fallen kingdom runes", 'You are at the runes of the fallen king you may find some of his '
-                                            'treasures', None, dark_realm)
-game_room = Room("The Game Dimension", "There are lots of games here", None, frost_forest, wifu2, )
-time_room = Room("Time Dimension", 'You are in the time dimension', None, frost_forest, [Longinus_Smasher, wifu3])
+inside_lake = Room("Inside lake", "You are swimming in the lake ", None, None, None, None, None, None, None, pink_lake,)
+underwater = Room("Under water", 'you are under water and you see fish and a UNDER WATER TEMPLE ', None, None, None,
+                  None, None, None, None, inside_lake,)
+underwater_Temple = Room("Under water temple", 'you are in the final boss room!!!you willl die!!!', None, None, None,
+                         None, None, None, None,)
+dwarves_town = Room("Dwarves Town", "there are many Dwarves around", None, None, None, None, None, None, None,
+                    pink_lake)
+dwarven_castle = Room("King Otar's Castle", "This is KIng Otars castle the King of dwarves", None, None, None, None,
+                      None, None, dwarves_town, [Iron_Shield, ])
+ice_cave = Room("Glacial Cave", "You look around and see nothing but ice it is cold", None, None, None, None, None,
+                None, town_of_endvador, [Gcoin, Iron_spear])
+frost_forest = Room("Frost Forest", "You see snow everywhere and it's very cold.", None, None, None, None, None, None,
+                    None, ice_cave)
+dark_realm = Room("The Dark Realm", 'Your in the dark realm you are where no man dare to seek', None, None, None,
+                  ice_cave, None, None, None, Dragon_Shield, )
+fall_kingdom = Room("Fallen kingdom runes", 'You are at the runes of the fallen king you may find some of his'
+                                            ' treasures', None, None, None, None, None, None,
+                    dark_realm, [wifu1, ])
+game_room = Room("The Game Dimension", "There are lots of games here", None, None, None, None, frost_forest, None, None,
+                 wifu2, )
+time_room = Room("Time Dimension", 'You are in the time dimension',  None, None, None, None, None, None,
+                 None, [Longinus_Smasher, wifu3])
 
 forest.south = town_of_endvador
 forest.north = pink_lake
@@ -314,9 +324,9 @@ while playing:
     print(player.current_location.description)
     print()
     print("You have the options to grab these items")
-
+    # print(player.current_location.items)
     for item in player.current_location.items:
-        print(Item.name)
+        print(item.name)
 
     command = input(">_")
 
@@ -333,6 +343,13 @@ while playing:
             player.move(next_room)
         except KeyError:
             print("you can't go that way")
+
+    elif "weeb_bag" in command:
+        print("This is whats in your portal")
+        print(player.inventory)
+        for found_item in player.inventory:
+            if found_item is None:
+                print("")
 
     elif "take" in command:
         Item = command[5:]
