@@ -151,8 +151,6 @@ a==3 # is a equal to 3?
 """
 
 
-1000 % 5
-
 # function notes
 # a**2 + b**2 = c**2
 

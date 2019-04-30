@@ -21,19 +21,9 @@ for item in fruit:
     print(item)
 
 
-
-Hero1 = ['genji', 'soldier_76', 'winston', 'Reaper', 'tracer', 
-        'wreaking_ball', 'Dva', 'hanzo', 'mercy', 'junk_rat']
+Hero1 = ['genji', 'soldier_76', 'winston', 'Reaper', 'tracer', 'wreaking_ball', 'Dva', 'hanzo', 'mercy', 'junk_rat']
 
 print(" The last thing in the list is %s" % Hero1[len(Hero1)-1])
-
-
-
-
-
-
-
-
 
 
 Hero = ['genji', 'soldier_76', 'winston', 'Reaper', 'tracer',
@@ -88,8 +78,7 @@ print(list)
 
 for i in range(len(list1)):
         if list1[i] == "u":     # i goes through all indices
-            list1.pop(i) # if you find a "u"
+            list1.pop(i)    # if you find a "u"
             list1.insert(i, " censor ")       # remove the i_th index
 # put a censor in there instead
 print("".join(list1))
-
