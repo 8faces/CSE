@@ -64,7 +64,8 @@ def is_second_num_even(num: str):
 # print("OK")
 
 def revers_it(string):
-    return [:-1]
+    string = string[::-1]
+    return string
 
 
 
