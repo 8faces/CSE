@@ -2,22 +2,28 @@
 test_num = "3586782824154010"
 
 
+
+
+
+
+
 def validate(num: str):
-        listt = list(num)
-        print(listt)
-        last_num = int(listt.pop(15))
-        print(listt)
-        print(last_num)
-        reversed_list = reverse_it(listt)
-        print(listt)
-
-
-print(validate(test_num))
+    number_list = list(num)
+    print(number_list)
+    last_num = int(number_list.pop(15))
+    print(number_list)
+    print(last_num)
+    reversed_list = reverse_it(number_list)
+    print(number_list)
 
 
 def reverse_it(string):
     string = string[::-1]
     return string
+
+def multiply_by_2(num: list):
+
+print(validate(test_num))
 
 
 # print(revers_it("olleh dlrow"))
