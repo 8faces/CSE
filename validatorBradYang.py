@@ -40,7 +40,7 @@ with open("Book1.csv", 'r') as old_csv:
         writer = csv.writer(new_csv)
         for row in reader:
             old_number = row[0]  # This is a string
-            if validate(old_number):
+            if validate(num):
                 writer.writerow(row)
         print("done")
 
