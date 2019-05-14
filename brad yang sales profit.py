@@ -18,7 +18,7 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
 
     for row in looker:
             region = row[0]
-            profit = row[13]  # This is a tring
+            profit = row[13]  # This is a string
             fruit = row[2]
             clothes = row[2]
             snack = row[2]
@@ -48,7 +48,7 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
                 meat_list.append(float(profit))
             if household == "Household":
                 household_list.append(float(profit))
-            if personal_care == "Personal care":
+            if personal_care == "Personal Care":
                 personal_care_list.append(float(profit))
             if cosmetics == "Cosmetics":
                 cosmetics_list.append(float(profit))
@@ -58,14 +58,36 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
                 cereal_list.append(float(profit))
             if beverages == "Beverages":
                 beverages_list.append(float(profit))
-            if baby_food == "Baby food":
+            if baby_food == "Baby Food":
                 baby_food_list.append(float(profit))
 
 
 fruit_sum = sum(fruit_list)
+clothes_sum = sum(clothes_list)
+snack_sum = sum(snack_list)
+office_supplies_sum = sum(office_supplies_list)
+meat_sum = sum(meat_list)
+household_sum = sum(household_list)
+personal_care_sum = sum(personal_care_list)
+cosmetics_sum = sum(cosmetics_list)
+vegetable_sum = sum(vegetable_list)
+cereal_sum = sum(cereal_list)
+beverages_sum = sum(beverages_list)
+baby_food_sum = sum(baby_food_list)
+
+
 print("The total profit of fruits is %f" % fruit_sum)
+print("The total profit of clothes is %f" % clothes_sum)
+print("The total profit of snacks is %f" % snack_sum)
+print("The total profit of office supplies is %f" % office_supplies_sum)
+print("The total profit of meat is %f" % meat_sum)
+print("The total profit of households is %f" % household_sum)
+print("The total profit of personal care is %f" % personal_care_sum)
+print("The total profit of cosmetics is %f" % cosmetics_sum)
+print("The total profit of vegetables is %f" % vegetable_sum)
+print("The total profit of beveerages is %f" % beverages_sum)
+print("The total profit of baby foods is %f" % baby_food_sum)
 
-
-
+if sum i
 
 print("done")
