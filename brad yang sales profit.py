@@ -88,6 +88,12 @@ print("The total profit of vegetables is %f" % vegetable_sum)
 print("The total profit of beveerages is %f" % beverages_sum)
 print("The total profit of baby foods is %f" % baby_food_sum)
 
-if sum i
 
+category_sums = [fruit_sum, clothes_sum, snack_sum, office_supplies_sum, meat_sum, household_sum,
+                 personal_care_sum, cosmetics_sum, vegetable_sum, beverages_sum, baby_food_sum, ]
+
+category_type = ["Fruit", "Clothes", "Snacks", "Office Supplies", "Meat", "Household", "{Personal Care", "Cosmetics",
+                 "Vegetables", "Beverages", "Baby Food"]
+index = category_sums.index(max(category_sums))
+print("the most profited category is %s " % category_sums[index])
 print("done")
