@@ -15,6 +15,14 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
     cereal_list = []
     beverages_list = []
     baby_food_list = []
+     = []
+     = []
+     = []
+     = []
+     = []
+     = []
+     = []
+
 
     for row in looker:
             region = row[0]
@@ -96,4 +104,3 @@ category_type = ["Fruit", "Clothes", "Snacks", "Office Supplies", "Meat", "House
                  "Vegetables", "Beverages", "Baby Food"]
 index = category_sums.index(max(category_sums))
 print("the most profited category is %s " % category_sums[index])
-print("done")
