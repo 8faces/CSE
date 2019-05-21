@@ -15,18 +15,17 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
     cereal_list = []
     beverages_list = []
     baby_food_list = []
-     = []
-     = []
-     = []
-     = []
-     = []
-     = []
-     = []
-
+    sub_saharan_africa = []
+    asia = []
+    europe = []
+    central_america_and_the_caribbean = []
+    middle_east_and_north_africa = []
+    north_america = []
+    australia_and_oceania = []
 
     for row in looker:
             region = row[0]
-            profit = row[13]  # This is a string
+            profit = row[13]
             fruit = row[2]
             clothes = row[2]
             snack = row[2]
@@ -39,6 +38,13 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
             cereal = row[2]
             beverages = row[2]
             baby_food = row[2]
+            sub_saharan_africa = row[2]
+            asia = row[2]
+            europe = row[2]
+            central_america_and_the_caribbean = row[2]
+            middle_east_and_north_africa = row[2]
+            north_america = row[2]
+            australia_and_oceania = row[2]
 
             if fruit == "Fruits":
                 fruit_list.append(float(profit))
@@ -68,7 +74,20 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
                 beverages_list.append(float(profit))
             if baby_food == "Baby Food":
                 baby_food_list.append(float(profit))
-
+            if sub_saharan_africa == "Sun=Saharan Africa":
+                sub_saharan_africa.append(float(profit))
+            if asia == "Asia":
+                asia.append(float(profit))
+            if europe == "Europe":
+                europe.append(float(profit))
+            if central_america_and_the_caribbean == "Central America and the Caribbean":
+                central_america_and_the_caribbean.append(float(profit))
+            if middle_east_and_north_africa == "Middle East and North Africa":
+                middle_east_and_north_africa.append(float(profit))
+            if north_america == "North America":
+                north_america.append(float(profit))
+            if australia_and_oceania == "Australia and Oceania":
+                australia_and_oceania.append(float(profit))
 
 fruit_sum = sum(fruit_list)
 clothes_sum = sum(clothes_list)
@@ -82,6 +101,7 @@ vegetable_sum = sum(vegetable_list)
 cereal_sum = sum(cereal_list)
 beverages_sum = sum(beverages_list)
 baby_food_sum = sum(baby_food_list)
+sub_saharan_africa_sum = sum(sub_saharan_africa)
 
 
 print("The total profit of fruits is %f" % fruit_sum)
