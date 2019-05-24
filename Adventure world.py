@@ -234,19 +234,20 @@ endvador_market = Room("Endvador Market", 'This is the market of envador you can
 pink_lake = Room("The Pink Lake Path", "There are fish in the lake", None, forest, None, None, None, None, None, )
 pink_lake_shore = Room("Shore of pink lake ",  "You feel a slight breeze and the water is touching your feet", None,
                        pink_lake, [Bcoin, Scoin])
-inside_lake = Room("Inside lake", "You are swimming in the lake ", None, None, None, None, None, None, None, pink_lake,)
+inside_lake = Room("Inside lake", "You are swimming in the lake ", None, pink_lake_shore, None, None, None, None, None,
+                   pink_lake,)
 underwater = Room("Under water", 'you are under water and you see fish and a UNDER WATER TEMPLE ', None, None, None,
-                  None, None, None, None, inside_lake,)
-underwater_Temple = Room("Under water temple", 'you are in the final boss room!!!you willl die!!!', None, None, None,
-                         None, None, None, None,)
-dwarves_town = Room("Dwarves Town", "there are many Dwarves around", None, None, None, None, None, None, None,
+                  None, inside_lake, None, None, inside_lake,)
+underwater_Temple = Room("Under water temple", 'you have found the peaceful ending good for you', None, None, None,
+                         None, underwater, None, None,)
+dwarves_town = Room("Dwarves Town", "there are many Dwarves around", None, None, pink_lake, None, None, None, None,
                     pink_lake)
-dwarven_castle = Room("King Otar's Castle", "This is KIng Otars castle the King of dwarves", None, None, None, None,
-                      None, None, dwarves_town, [Iron_Shield, ])
-ice_cave = Room("Glacial Cave", "You look around and see nothing but ice it is cold", None, None, None, None, None,
-                None, town_of_endvador, [Gcoin, Iron_spear])
-frost_forest = Room("Frost Forest", "You see snow everywhere and it's very cold.", None, None, None, None, None, None,
-                    None, ice_cave)
+dwarven_castle = Room("King Otar's Castle", "This is KIng Otars castle the King of dwarves", None, None, dwarves_town,
+                      None, None, None, dwarves_town, [Iron_Shield, ])
+ice_cave = Room("Glacial Cave", "You look around and see nothing but ice it is cold", None, None, town_of_endvador,
+                None, None, None, None, [Gcoin, Iron_spear])
+frost_forest = Room("Frost Forest", "You see snow everywhere and it's very cold.", None, ice_cave, None, None, None,
+                    None, None, ice_cave)
 dark_realm = Room("The Dark Realm", 'Your in the dark realm you are where no man dare to seek', None, None, None,
                   ice_cave, None, None, None, Dragon_Shield, )
 fall_kingdom = Room("Fallen kingdom runes", 'You are at the runes of the fallen king you may find some of his'
@@ -254,7 +255,7 @@ fall_kingdom = Room("Fallen kingdom runes", 'You are at the runes of the fallen 
                     dark_realm, [wifu1, ])
 game_room = Room("The Game Dimension", "There are lots of games here", None, None, None, None, frost_forest, None, None,
                  wifu2, )
-time_room = Room("Time Dimension", 'You are in the time dimension',  None, None, None, None, None, None,
+time_room = Room("Time Dimension", 'You are in the time dimension',  None, frost_forest, None, None, None, None,
                  None, [Longinus_Smasher, wifu3])
 
 forest.south = town_of_endvador
