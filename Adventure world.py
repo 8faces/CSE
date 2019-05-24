@@ -190,11 +190,7 @@ class Character(object):
 
 
 class Room(object):
-    def __init__(self, name, description, north=None, south=None, east=None, west=None, up=None, down=None,
-                 person=None, items=None):
-
-        if items is None:
-            items = []
+    def __init__(self, name, description, north, south, east, west, up, down, person=None, items=None):
         self.name = name
         self.north = north
         self.south = south
@@ -233,7 +229,7 @@ endvador_market = Room("Endvador Market", 'This is the market of envador you can
                        town_of_endvador, None, None, None, [Iron_helmet, Iron_Sword, ])
 pink_lake = Room("The Pink Lake Path", "There are fish in the lake", None, forest, None, None, None, None, None, )
 pink_lake_shore = Room("Shore of pink lake ",  "You feel a slight breeze and the water is touching your feet", None,
-                       pink_lake, [Bcoin, Scoin])
+                       pink_lake, [Bcoin, Scoin], None, None, None)
 inside_lake = Room("Inside lake", "You are swimming in the lake ", None, pink_lake_shore, None, None, None, None, None,
                    pink_lake,)
 underwater = Room("Under water", 'you are under water and you see fish and a UNDER WATER TEMPLE ', None, None, None,
@@ -291,9 +287,9 @@ time_room.south = frost_forest
 
 
 class Player(object):
-    def __init__(self, starting_location):
+    def __init__(self, inventory, starting_location):
         self.health = 100
-        self.inventory = []
+        self.inventory = inventory
         self.current_location = starting_location
 
     def move(self, new_location):
@@ -313,7 +309,7 @@ class Player(object):
         return getattr(self.current_location, direction)
 
 
-player = Player(forest)
+player = Player([], forest)
 player.inventory.append(Item)
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
 short_directions = ['n', 's', 'e', 'w', 'u', 'd']
@@ -345,25 +341,25 @@ while playing:
         except KeyError:
             print("you can't go that way")
 
-    elif "weeb_bag" in command:
+    elif "weeb bag" in command:
         print("This is whats in your portal")
-        print(player.inventory)
+        print(player.inventory.name)
         for found_item in player.inventory:
             if found_item is None:
                 print("You no have items")
             else:
-                print("found_item.name")
+                print(found_item)
 
     elif "take" in command:
-        Item = command[5:]
-        ItemInRoom = None
-        Name = Item
-        for Item in player.current_location.items:
-            if Item.name == Item:
-                ItemInRoom = Item
-            if ItemInRoom is not None:
-                player.inventory.append(ItemInRoom)
-                player.current_location.Items.remove(ItemInRoom)
+        print("Name the item you want to take")
+        command = input(">_").lower()
+        item = command
+        items = []
+        items.append(player.current_location.items)
+        if item in player.current_location.items:
+            player.inventory.append(item)
+            player.current_location.Items.remove(item)
+            print("gto")
 
     else:
         print("Command no recognized")
