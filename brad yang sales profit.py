@@ -102,6 +102,12 @@ cereal_sum = sum(cereal_list)
 beverages_sum = sum(beverages_list)
 baby_food_sum = sum(baby_food_list)
 sub_saharan_africa_sum = sum(sub_saharan_africa)
+asia_sum = sum(asia)
+europe_sum = sum(europe)
+central_america_and_the_caribbean_sum = sum(central_america_and_the_caribbean)
+middle_east_and_north_africa_sum = sum(middle_east_and_north_africa)
+north_america_sum = sum(north_america)
+australia_and_oceania_sum = sum(australia_and_oceania)
 
 
 print("The total profit of fruits is %f" % fruit_sum)
@@ -115,7 +121,13 @@ print("The total profit of cosmetics is %f" % cosmetics_sum)
 print("The total profit of vegetables is %f" % vegetable_sum)
 print("The total profit of beveerages is %f" % beverages_sum)
 print("The total profit of baby foods is %f" % baby_food_sum)
-
+print("The total profit of Sub Saharan Africa is %f" % sub_saharan_africa_sum)
+print("The total profit of Asia is %f" % asia_sum)
+print("The total profit of Europe is %f" % europe_sum)
+print("The total profit of Central America and The Caribbean is %f" % central_america_and_the_caribbean_sum)
+print("The total profit of Middle East and North Africa is %f" % middle_east_and_north_africa_sum)
+print("The total profit of North America is %f" % north_america_sum)
+print("The total profit of Australia and Oceania is %f" % australia_and_oceania_sum)
 
 category_sums = [fruit_sum, clothes_sum, snack_sum, office_supplies_sum, meat_sum, household_sum,
                  personal_care_sum, cosmetics_sum, vegetable_sum, beverages_sum, baby_food_sum, ]
