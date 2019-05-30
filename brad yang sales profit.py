@@ -45,6 +45,18 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
             middle_east_and_north_africa = row[2]
             north_america = row[2]
             australia_and_oceania = row[2]
+            Fruit_units = [2]
+            Household_units = [2]
+            OfficeSupplies_Units = [2]
+            Clothes_Units = [2]
+            Meat_Unit = [2]
+            Beverages_Units = [2]
+            Cosmetics_Units = [2]
+            PersonalCare_Units = [2]
+            BabyFood_Unit = [2]
+            Cereal_Units = [2]
+            Veggies_Units = [2]
+            Snack_Unites = [2]
 
             if fruit == "Fruits":
                 fruit_list.append(float(profit))
@@ -88,7 +100,18 @@ with open("Sales Records.csv", 'r') as csv_file_stuff:
                 north_america.append(float(profit))
             if australia_and_oceania == "Australia and Oceania":
                 australia_and_oceania.append(float(profit))
-
+SnacksUnit_Total = sum(Snacks_Units)
+VeggiesUnits_Total = sum(Veggies_Units)
+CerealUnit_Total = sum(Cereal_Units)
+BabyFoodUnit_Total = sum(BabyFood_Unit)
+PersonalCareUnits_Total = sum(PersonalCare_Units)
+CosmeticsUnits_Total = sum(Cosmetics_Units)
+BeveragesUnits_Total = sum(Beverages_Units)
+MeatUnits_Total = sum(Meat_Unit)
+ClothesUnits_Total = sum(Clothes_Units)
+OfficeSuppliesUnits_Total = sum(OfficeSupplies_Units)
+HouseholdUnits_Total = sum(Household_units)
+FruitUnits_Total = sum(Fruit_units)
 fruit_sum = sum(fruit_list)
 clothes_sum = sum(clothes_list)
 snack_sum = sum(snack_list)
@@ -110,6 +133,19 @@ north_america_sum = sum(north_america)
 australia_and_oceania_sum = sum(australia_and_oceania)
 
 
+RegionProfitSum = [sub_saharan_africa_sum, asia_sum, europe_sum, central_america_and_the_caribbean_sum,
+                   middle_east_and_north_africa_sum, north_america_sum, australia_and_oceania_sum,]
+
+RegionOfProfit = ["Sub Saharan Africa", "Asia", "Europe", "Central America and the Caribbean",
+                  "Middle East and North Africa", "North America", "Australia Oceania"]
+
+category_sums = [fruit_sum, clothes_sum, snack_sum, office_supplies_sum, meat_sum, household_sum,
+                 personal_care_sum, cosmetics_sum, vegetable_sum, beverages_sum, baby_food_sum, ]
+
+category_type = ["Fruit", "Clothes", "Snacks", "Office Supplies", "Meat", "Household", "{Personal Care", "Cosmetics",
+                 "Vegetables", "Beverages", "Baby Food"]
+index = category_sums.index(max(category_sums))
+index2 = RegionProfitSum.index(max(RegionProfitSum))
 print("The total profit of fruits is %f" % fruit_sum)
 print("The total profit of clothes is %f" % clothes_sum)
 print("The total profit of snacks is %f" % snack_sum)
@@ -117,10 +153,11 @@ print("The total profit of office supplies is %f" % office_supplies_sum)
 print("The total profit of meat is %f" % meat_sum)
 print("The total profit of households is %f" % household_sum)
 print("The total profit of personal care is %f" % personal_care_sum)
-print("The total profit of cosmetics is %f" % cosmetics_sum)
+print("The total profit of cosmetics is % f" % cosmetics_sum)
 print("The total profit of vegetables is %f" % vegetable_sum)
 print("The total profit of beveerages is %f" % beverages_sum)
 print("The total profit of baby foods is %f" % baby_food_sum)
+print("the most profited category is %s " % category_sums[index])
 print("The total profit of Sub Saharan Africa is %f" % sub_saharan_africa_sum)
 print("The total profit of Asia is %f" % asia_sum)
 print("The total profit of Europe is %f" % europe_sum)
@@ -128,6 +165,13 @@ print("The total profit of Central America and The Caribbean is %f" % central_am
 print("The total profit of Middle East and North Africa is %f" % middle_east_and_north_africa_sum)
 print("The total profit of North America is %f" % north_america_sum)
 print("The total profit of Australia and Oceania is %f" % australia_and_oceania_sum)
+print("The most profited ")
+
+RegionProfitSum = [sub_saharan_africa_sum, asia_sum, europe_sum, central_america_and_the_caribbean_sum,
+                   middle_east_and_north_africa_sum, north_america_sum, australia_and_oceania_sum,]
+
+RegionOfProfit = ["Sub Saharan Africa", "Asia", "Europe", "Central America and the Caribbean",
+                  "Middle East and North Africa", "North America", "Australia Oceania"]
 
 category_sums = [fruit_sum, clothes_sum, snack_sum, office_supplies_sum, meat_sum, household_sum,
                  personal_care_sum, cosmetics_sum, vegetable_sum, beverages_sum, baby_food_sum, ]
